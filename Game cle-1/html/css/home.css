@@ -1,0 +1,153 @@
+.background {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://www.pennlive.com/resizer/8NhCZliI6E_RCk2tfzaEq5ggpzc=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/GRI7GE7XPZDFBJONPIEGKNITEY.jpg');
+    background-size: cover;
+    
+
+
+}
+
+/* all devices */
+/* Portrait and Landscape */
+
+@media only screen
+and (max-device-width: 1600px){
+    html {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://www.pennlive.com/resizer/8NhCZliI6E_RCk2tfzaEq5ggpzc=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/GRI7GE7XPZDFBJONPIEGKNITEY.jpg');
+        background-size: cover;
+    }
+
+    header{
+    font-size:  11vw;
+}
+
+    .bar {
+        flex-direction: column;
+    }
+    .bar > button {
+        background-color: black;
+        font-size: 30px;
+        display: none;
+    }
+
+}
+@media only screen and (min-device-width: 1601px){
+    html {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://www.pennlive.com/resizer/8NhCZliI6E_RCk2tfzaEq5ggpzc=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/GRI7GE7XPZDFBJONPIEGKNITEY.jpg');
+        background-size: cover;
+    }
+    .dropdown {
+        display:none
+    }
+    header {
+        font-size: 6vw;
+    }
+
+}
+
+
+
+header {
+    color: navajowhite;
+    text-align: center;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(30px);
+
+}
+
+.bar {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    top: -10px;
+}
+
+.bar > button {
+    background-color: rgba(140, 133, 144, 0.4);
+    width:100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    transition: 0.3s;
+    color: whitesmoke;
+}
+
+.bar > button:hover {
+    opacity: 1;
+    background-color: darkslategrey;
+}
+
+.iframe-border {
+    overflow: hidden;
+    padding-top: 50%; /* 16:9*/
+    position: relative;
+}
+
+.iframe-border iframe {
+    border: 0;
+    height: 70%;
+    left: 300px;
+    position: absolute;
+    top: 80px;
+    width: 70%;
+    margin: auto;
+}
+
+img {
+    display: flex;
+    margin: auto;
+    top: 70px;
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+
+}
+
+.dropbtn {
+    background-color: rgba(140, 133, 144, 1);
+    color: whitesmoke;
+    padding: 1px;
+    font-size: 70px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    position: relative;
+    left: 420px;
+    top: -15px;
+
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: darkslategrey;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(140, 133, 144, 0.9);
+    min-width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 6vw;
+    text-align: center;
+    color: darkslategrey;
+}
+
+.dropdown a:hover {background-color: dimgrey;}
+
+.show {display: block;}
+
+
