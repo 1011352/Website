@@ -1,63 +1,71 @@
 .background {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://www.pennlive.com/resizer/8NhCZliI6E_RCk2tfzaEq5ggpzc=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/GRI7GE7XPZDFBJONPIEGKNITEY.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://www.pennlive.com/resizer/8NhCZliI6E_RCk2tfzaEq5ggpzc=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/GRI7GE7XPZDFBJONPIEGKNITEY.jpg');
     background-size: cover;
-    
-
-
 }
 
 /* all devices */
 /* Portrait and Landscape */
-
 @media only screen
-and (max-device-width: 1600px){
+and (max-device-width: 1600px) {
     html {
-        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://www.pennlive.com/resizer/8NhCZliI6E_RCk2tfzaEq5ggpzc=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/GRI7GE7XPZDFBJONPIEGKNITEY.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://www.pennlive.com/resizer/8NhCZliI6E_RCk2tfzaEq5ggpzc=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/GRI7GE7XPZDFBJONPIEGKNITEY.jpg');
         background-size: cover;
     }
 
-    header{
-    font-size:  11vw;
-}
+    header {
+        font-size: 11vw;
+    }
 
     .bar {
         flex-direction: column;
     }
+
     .bar > button {
         background-color: black;
         font-size: 30px;
         display: none;
     }
-    .body{
+
+    .body {
         display: none;
     }
-    .body > p{
+
+    .body > p {
         display: none;
     }
-    .body > h1{
+
+    .body > h1 {
         display: none;
     }
+
     footer {
         display: none;
     }
-    .placeholder{
+
+    .placeholder {
         display: none;
     }
 
 }
 
-@media only screen and (min-device-width: 1601px){
+@media only screen and (min-device-width: 1601px) {
     html {
-        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://www.pennlive.com/resizer/8NhCZliI6E_RCk2tfzaEq5ggpzc=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/GRI7GE7XPZDFBJONPIEGKNITEY.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://www.pennlive.com/resizer/8NhCZliI6E_RCk2tfzaEq5ggpzc=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/GRI7GE7XPZDFBJONPIEGKNITEY.jpg');
         background-size: cover;
     }
+
     .dropdown {
-        display:none
+        display: none
     }
+
     header {
         font-size: 6vw;
     }
-    footer{
+
+    footer {
         font-size: 2vw;
     }
 }
@@ -81,7 +89,7 @@ header {
 
 .bar > button {
     background-color: rgba(140, 133, 144, 0.4);
-    width:100%;
+    width: 100%;
     margin: 10px;
     text-align: center;
     line-height: 30px;
@@ -149,7 +157,7 @@ img {
     background-color: rgba(140, 133, 144, 0.9);
     min-width: 100%;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -162,9 +170,13 @@ img {
     color: darkslategrey;
 }
 
-.dropdown a:hover {background-color: dimgrey;}
+.dropdown a:hover {
+    background-color: dimgrey;
+}
 
-.show {display: block;}
+.show {
+    display: block;
+}
 
 .body {
     overflow-wrap: break-word;
@@ -172,23 +184,23 @@ img {
     float: right;
     color: whitesmoke;
     display: flex;
-    width:400px;
+    width: 400px;
     right: 400px;
-    bottom: 400px;
+    bottom: 300px;
 }
 
-.body > h1{
+.body > h1 {
     color: darkgrey;
     position: relative;
-    bottom:50px;
-    left:175px;
+    bottom: 50px;
+    left: 175px;
 }
 
 .placeholder {
-    display: flex;
     position: relative;
     left: -200px;
-    top:-100px;
+    width: 30%;
+
 
 }
 
