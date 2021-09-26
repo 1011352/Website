@@ -28,8 +28,24 @@ and (max-device-width: 1600px){
         font-size: 30px;
         display: none;
     }
+    .body{
+        display: none;
+    }
+    .body > p{
+        display: none;
+    }
+    .body > h1{
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    .placeholder{
+        display: none;
+    }
 
 }
+
 @media only screen and (min-device-width: 1601px){
     html {
         background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://www.pennlive.com/resizer/8NhCZliI6E_RCk2tfzaEq5ggpzc=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/GRI7GE7XPZDFBJONPIEGKNITEY.jpg');
@@ -41,9 +57,10 @@ and (max-device-width: 1600px){
     header {
         font-size: 6vw;
     }
-
+    footer{
+        font-size: 2vw;
+    }
 }
-
 
 
 header {
@@ -126,7 +143,6 @@ img {
     background-color: darkslategrey;
 }
 
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -150,4 +166,40 @@ img {
 
 .show {display: block;}
 
+.body {
+    overflow-wrap: break-word;
+    position: sticky;
+    float: right;
+    color: whitesmoke;
+    display: flex;
+    width:400px;
+    right: 400px;
+    bottom: 400px;
+}
+
+.body > h1{
+    color: darkgrey;
+    position: relative;
+    bottom:50px;
+    left:175px;
+}
+
+.placeholder {
+    display: flex;
+    position: relative;
+    left: -200px;
+    top:-100px;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 0.8vw;
+}
 
