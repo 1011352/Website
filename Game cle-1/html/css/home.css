@@ -196,6 +196,13 @@ img {
     left: 175px;
 }
 
+.body > h2 {
+    color: darkgrey;
+    position: relative;
+    bottom: 100px;
+    left: 175px;
+}
+
 .placeholder {
     position: relative;
     left: -200px;
