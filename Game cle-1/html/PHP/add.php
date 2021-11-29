@@ -12,5 +12,12 @@ if (!$conn) {
     die("Connection failed:" . mysqli_connect_error());
 }
 
+$username2 = $_POST['uname2'];
+$typeQuestion = $_POST['tquestion'];
+$question = $_POST['question'];
 
 
+
+
+
+?>

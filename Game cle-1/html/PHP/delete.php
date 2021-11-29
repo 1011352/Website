@@ -14,3 +14,12 @@ if (!$conn) {
 
 
 
+$sql = "INSERT INTO accounts (email, username, password)
+VALUES ($email,$username,$password)";
+
+
+if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
