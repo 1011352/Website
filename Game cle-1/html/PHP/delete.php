@@ -1,25 +1,18 @@
 <?php
-$dbPassword = '';
-$dbUserName = 'root';
-$dbServer = 'localhost';
-$dbName = 'ded';
+include "config.php"; // Using database connection file here
 
+$id = $_GET['id']; // get id through query string
 
-// Create connection
-$conn = mysqli_connect($dbServer, $dbUserName, $dbPassword, $dbName);
-// Check connection
-if (!$conn) {
-    die("Connection failed:" . mysqli_connect_error());
+$del = mysqli_query($conn,"delete from accounts where id = '$id'"); // delete query
+
+if($del)
+{
+    mysqli_close($conn); // Close connection
+    header("location:admin.php"); // redirects to all records page
+    exit;
 }
-
-
-
-$sql = "INSERT INTO accounts (email, username, password)
-VALUES ($email,$username,$password)";
-
-
-if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+else
+{
+    echo "Error deleting record"; // display error message if not delete
 }
+?>

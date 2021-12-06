@@ -1,21 +1,20 @@
 <?php
-$dbPassword = '';
-$dbUserName = 'root';
-$dbServer = 'localhost';
-$dbName = 'ded';
-// Create connection
-$conn = mysqli_connect($dbServer, $dbUserName, $dbPassword, $dbName);
-// Check connection
-if (!$conn) {
-    die("Connection failed:" . mysqli_connect_error());
-}
+require_once "config.php";
 $email = $_POST['email'];
 $username = $_POST['uname'];
 $password = $_POST['password'];
 
+//Prevent sql injections
+    $username = stripcslashes($username);
+    $password = stripcslashes(($password));
+    $username = mysqli_real_escape_string($conn, $username);
+    $password = mysqli_real_escape_string($conn, $password);
+
+
+
 
 $sql = "INSERT INTO accounts (email, username, password)
-VALUES ($email,$username,$password)";
+VALUES ('$email','$username','$password')";
 
 
 if (mysqli_query($conn, $sql)) {

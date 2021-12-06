@@ -12,9 +12,9 @@ if (!$conn) {
     die("Connection failed:" . mysqli_connect_error());
 }
 
-$username2 = $_POST['uname2'];
-$typeQuestion = $_POST['tquestion'];
-$question = $_POST['question'];
+$username2 = mysqli_real_escape_string($conn, $_POST['uname2']);
+$typeQuestion = mysqli_real_escape_string($conn, $_POST['tquestion']);
+$question = mysqli_real_escape_string($conn, $_POST['question']);
 
 
 
