@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="css/FAQ.css"/>
 <head>
     <title>Display all accounts from Database</title>
 </head>
@@ -9,7 +10,7 @@
 
 <table border="2">
     <tr>
-        <td>Sr.No.</td>
+        <td>ID</td>
         <td>email</td>
         <td>username</td>
         <td>password</td>
@@ -20,7 +21,7 @@
     include "config.php"; // Using database connection file here
 
 
-    $records = mysqli_query($conn,"select * from accounts"); // fetch data from database
+    $records = mysqli_query($conn,"SELECT * FROM accounts"); // fetch data from database
 
     while($data = mysqli_fetch_array($records))
     {

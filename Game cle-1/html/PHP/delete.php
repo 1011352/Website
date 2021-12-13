@@ -3,7 +3,7 @@ include "config.php"; // Using database connection file here
 
 $id = $_GET['id']; // get id through query string
 
-$del = mysqli_query($conn,"delete from accounts where id = '$id'"); // delete query
+$del = mysqli_query($conn,"DELETE FROM accounts WHERE id = '$id'"); // delete query
 
 if($del)
 {
